@@ -1,0 +1,177 @@
+﻿/*MENU*/
+.menu {
+    background-color: #026b97;
+    float: left;
+    width: 140px;
+    height: 100vh;
+}
+    /*logo*/
+    .menu .logo-area {
+        width: 100%;
+        height: 52px;
+        background-color: #006189;
+    }
+
+    .menu #logo {
+        height: 100%;
+    }
+    /*section-of-menu*/
+    .menu #menu-content {
+        height: calc(100% - 93px);
+        width: 140px;
+        overflow: auto;
+        border-bottom: 1px solid #404040;
+    }
+
+        .menu #menu-content .merchandise {
+            position: fixed;
+        }
+        /*scroll*/
+        .menu #menu-content::-webkit-scrollbar {
+            opacity: 0.4;
+            border-radius: 8px;
+            width: 8px;
+            display: block;
+        }
+
+        .menu #menu-content::-webkit-scrollbar-track {
+            background-color: #e0e0e0;
+            opacity: 0.4;
+            border-radius: 8px;
+        }
+
+        .menu #menu-content::-webkit-scrollbar-thumb {
+            background-color: #c2c2c2;
+            opacity: 0.4;
+            border-radius: 8px;
+        }
+
+            .menu #menu-content::-webkit-scrollbar-thumb:hover {
+                color: #404040;
+                opacity: 0.4;
+            }
+
+    .menu #logo .logo-pages {
+        background-image: url('../../content/images/logo-mshopkeeper.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 120px;
+        height: inherit;
+        margin: auto;
+    }
+
+/*các thuộc tính chung của các menu*/
+.menu-item {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .menu-item:hover {
+        background-color: #006189;
+    }
+
+    .menu-item .menu-item-icon {
+        width: 40px;
+        height: 100%;
+        background-image: url('../../content/images/slibarmenu.png');
+        background-repeat: no-repeat;
+    }
+
+    .menu-item .icon-more {
+        width: 40px;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .menu-item .menu-item-text {
+        line-height: 40px;
+    }
+
+/*thuộc tính riêng của từng menu*/
+.icon-board {
+    background-position: 10px 9px;
+}
+
+.icon-report {
+    background-position: 10px -270px;
+}
+
+.icon-order {
+    background-image: url('../../content/images/ic_sogiaohang.png');
+    background-position: 14px 11px;
+}
+
+.icon-bought {
+    background-position: 10px -31px;
+}
+
+.icon-store {
+    background-position: 10px -72px;
+}
+
+.icon-deposit {
+    background-position: 10px -112px;
+}
+
+.icon-cost {
+    background-position: 10px -152px;
+}
+
+.icon-gift {
+    background-position: 10px -191px;
+}
+
+.icon-sms-marketing {
+    background-image: url('../../content/images/sms_menu.svg');
+    background-position: 14px 11px;
+}
+
+.icon-category {
+    background-position: 10px -230px;
+}
+
+.icon-email-amount {
+    background-image: url('../../content/images/Logo_meInvoice.svg');
+    background-position: 10px 6px;
+    background-size: 23px;
+}
+
+.icon-accountant {
+    background-position: 14px 11px;
+    background-image: url('../../content/images/ic_Ketoan.png');
+}
+
+.icon-setting {
+    background-position: 10px -311px;
+}
+
+.icon-help {
+    background-position: 10px -380px;
+}
+
+.icon-subscription {
+    background-position: 10px -415px;
+}
+
+.icon-ocm {
+    background-position: 14px 11px;
+    background-image: url('../../content/images/ic_ocm_logo.png');
+}
+
+.icon-5shop {
+    background-position: 11px 7px;
+    background-image: url('../../content/images/icon_5shop_white_24_1.png');
+}
+
+.icon-api {
+    background-position: 14px 11px;
+    background-image: url('../../content/images/ic_api_20.svg');
+}
+
+.icon-merchandise {
+    background-position: 11px -345px;
+}

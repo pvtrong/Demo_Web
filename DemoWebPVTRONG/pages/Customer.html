@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Web Demo</title>
+    <link href="/css/common/Dialog.css" rel="stylesheet" />
+    <link href="/css/common/Menu.css" rel="stylesheet" />
+    <link href="/css/common/index.css" rel="stylesheet" />
+    <link href="/css/lib/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Menu area-->
+    <div class="menu">
+        <!--Logo-->
+        <div class="logo-area">
+            <a id="logo" href="index.html">
+                <div class="logo-pages">
+
+                </div>
+            </a>
+        </div>
+
+        <!--Menu item-->
+        <div id="menu-content">
+            <a class="menu-item" href="index.html">
+                <span class="menu-item-icon icon-board"></span>
+                <span class="menu-item-text">Tổng quan</span>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-report"></div>
+                <div class="menu-item-text">Báo cáo</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-order"></div>
+                <div class="menu-item-text">Đơn hàng</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-bought"></div>
+                <div class="menu-item-text">Mua hàng</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-store"></div>
+                <div class="menu-item-text">Kho</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-deposit"></div>
+                <div class="menu-item-text">Quỹ tiền</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-cost"></div>
+                <div class="menu-item-text">Chi phí</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-gift"></div>
+                <div class="menu-item-text">Khuyến mại</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-sms-marketing"></div>
+                <div class="menu-item-text">SMS Marketing</div>
+            </a>
+            <a class="menu-item" href="Customer.html">
+                <div class="menu-item-icon icon-category"></div>
+                <div class="menu-item-text">Danh mục</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-email-amount"></div>
+                <div class="menu-item-text">Hoá đơn điện </div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-accountant"></div>
+                <div class="menu-item-text">Kế toán</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-setting"></div>
+                <div class="menu-item-text">Thiết lập</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-help"></div>
+                <div class="menu-item-text">Trợ giúp</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="menu-item-icon icon-subscription"></div>
+                <div class="menu-item-text">Thuê bao</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-ocm"></div>
+                <div class="menu-item-text">OCM</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-5shop"></div>
+                <div class="menu-item-text">5Shop</div>
+            </a>
+            <a class="menu-item" href="#">
+                <div class="icon-more icon-api"></div>
+                <div class="menu-item-text">API</div>
+            </a>
+
+
+        </div>
+        <a class="menu-item merchandise" href="#">
+            <div class="menu-item-icon icon-merchandise"></div>
+            <div class="menu-item-text">Hàng hoá</div>
+        </a>
+    </div>
+
+    <!--Content area-->
+    <div class="content">
+        <div class="content-header">
+            <div id="header-title">Khách hàng</div>
+            <div class="filter">
+                <a href="#" class="filter-content">
+                    <div class="filter-text">
+                        misard
+                    </div>
+
+                    <div class="filter-trigger">
+                    </div>
+                </a>
+                <div class="box-filter-all">
+                    <div class="filter-selection" id="shops">Chuỗi cửa hàng</div>
+                    <div class="filter-selection" id="misard">--Kho tổng</div>
+                    <div class="filter-selection" id="main-store">--misard</div>
+                </div>
+            </div>
+            <div class="account">
+                <a href="#" class="account-area">
+                    <div class="avatar-account"></div>
+                    <div class="trigger-account">
+                        Phạm Văn Trọng
+                        <div class="info-trigger-account"></div>
+                    </div>
+
+                </a>
+                <div class="box-account">
+                    <div href="#" class="account-selection" id="change-pw">Thay đổi mật khẩu</div>
+                    <div href="#" class="account-selection" id="feedback">Góp ý nhà phát triển</div>
+                    <div href="#" class="account-selection" id="log-out">Đăng xuất</div>
+                </div>
+            </div>
+            
+            <div class="more-area call-area">
+                <a class="call" href="#"></a>
+            </div>
+            <div class="more-area notice-area">
+                <a class="notice" href="#"></a>
+            </div>
+            <div class="more-area help-area">
+                <a class="help" href="#"></a>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="grid-content">
+                <div class="toolbar">
+                    <button id="btnAdd"><i class="icon-toolbar icon-toolbar-add"></i>Thêm mới</button>
+                    <button id="btnCopy"> <i class="icon-toolbar icon-toolbar-copy"></i>Nhân bản</button>
+                    <button id="btnEdit"><i class="icon-toolbar icon-toolbar-edit"></i>Sửa</button>
+                    <button id="btnDelete"><i class="icon-toolbar icon-toolbar-delete"></i>Xoá</button>
+                    <button id="btnSync"><i class="icon-toolbar icon-toolbar-sync"></i>Nạp</button>
+                    <button id="btnImport"><i class="icon-toolbar icon-toolbar-import"></i>Nhập khẩu</button>
+                    <button id="btnExport"><i class="icon-toolbar icon-toolbar-export"></i>Xuất khẩu</button>
+                </div>
+                <div class="grid">
+                    <table class="tblInWard" border="1">
+                        <thead>
+                            <tr>
+                                <th id="1">
+                                    <div fieldData="CustomerCode" dataType="string">
+                                        <div class="column-title">Mã khách hàng</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-customer-code">
+                                                <div class="filter-box" id="box-1">
+                                                    <div class="filter-item" id="btnContain1" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual1" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart1" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd1" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot1" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-customer-code" />
+                                        </div>
+
+                                    </div>
+                                </th>
+                                <th id="2">
+                                    <div fieldData="CustomerName" dataType="string">
+                                        <div class="column-title">Tên khách hàng</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-customer-name">
+                                                <div class="filter-box" id="box-2">
+                                                    <div class="filter-item" id="btnContain2" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual2" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart2" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd2" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot2" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-customer-name" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="3">
+                                    <div fieldData="Mobile" dataType="string">
+                                        <div class="column-title">Điện thoại</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-mobile">
+                                                <div class="filter-box" id="box-3">
+                                                    <div class="filter-item" id="btnContain3" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual3" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart3" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd3" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot3" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-mobile" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="4">
+                                    <div fieldData="Email" dataType="string">
+                                        <div class="column-title">Email</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-email">
+                                                <div class="filter-box" id="box-4">
+                                                    <div class="filter-item" id="btnContain4" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual4" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart4" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd4" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot4" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-email"/>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="5">
+                                    <div fieldData="City" dataType="string">
+                                        <div class="column-title">Tỉnh thành</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-city">
+                                                <div class="filter-box" id="box-5">
+                                                    <div class="filter-item" id="btnContain5" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual5" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart5" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd5" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot5" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-city" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="6">
+                                    <div fieldData="District" dataType="string">
+                                        <div class="column-title">Quận/huyện</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-district">
+                                                <div class="filter-box" id="box-6">
+                                                    <div class="filter-item" id="btnContain6" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual6" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart6" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd6" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot6" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-district" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="7">
+                                    <div fieldData="Commune" dataType="string">
+                                        <div class="column-title">Phường/Xã</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-commune">
+                                                <div class="filter-box" id="box-7">
+                                                    <div class="filter-item" id="btnContain7" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual7" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart7" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd7" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot7" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-commune" />
+                                        </div>
+                                    </div>
+                                </th>
+
+                                <th id="8">
+                                    <div fieldData="Street" dataType="string">
+                                        <div class="column-title">Đường phố, số nhà</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-street">
+                                                <div class="filter-box" id="box-8">
+                                                    <div class="filter-item" id="btnContain8" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual8" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart8" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd8" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot8" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-street"/>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="9">
+                                    <div fieldData="Birthday" dataType="date">
+                                        <div class="column-title">Ngày sinh</div>
+                                        <div class="column-filter">
+                                            
+                                            <input type="date"  class="filter-input" id="input-birthday"/>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="10">
+                                    <div id="fieldGroupCustomer" fieldData="GroupCustomer" dataType="string">
+                                        <div class="column-title">Nhóm khách hàng</div>
+                                        <div class="column-filter">
+                                            <select id="input-group-customer">
+                                                <option value="Khách hàng VIP">Khách hàng VIP</option>
+                                                <option value="Khách hàng chuẩn">Khách hàng chuẩn</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="11">
+                                    <div fieldData="MemberCode" dataType="number">
+                                        <div class="column-title">Mã thành viên</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-member-code">
+                                                <div class="filter-box" id="box-11">
+                                                    <div class="filter-item" id="btnContain11" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual11" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart11" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd11" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot11" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-member-code" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="12">
+                                    <div fieldData="Rank" dataType="string">
+                                        <div class="column-title">Hạng thẻ</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-rank">
+                                                <div class="filter-box" id="box-12">
+                                                    <div class="filter-item" id="btnContain12" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual12" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart12" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd12" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot12" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-rank"/>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="13">
+                                    <div fieldData="TextNote" dataType="string">
+                                        <div class="column-title">Ghi chú</div>
+                                        <div class="column-filter">
+                                            <div class="filter-option" id="filter-text-note">
+                                                <div class="filter-box" id="box-13">
+                                                    <div class="filter-item" id="btnContain13" value="@">@: Chứa</div>
+                                                    <div class="filter-item" id="btnEqual13" value="=">=: Bằng</div>
+                                                    <div class="filter-item" id="btnStart13" value="+">+: Bắt đầu</div>
+                                                    <div class="filter-item" id="btnEnd13" value="-">-: Kết thúc</div>
+                                                    <div class="filter-item" id="btnNot13" value="!">!: Không</div>
+                                                </div>
+                                            </div>
+                                            <input class="filter-input" id="input-text-note" />
+                                        </div>
+                                    </div>
+                                </th>
+                                <th id="14">
+                                    <div fieldData="Status" dataType="boolean">
+                                        <div class="column-title">Đang theo dõi</div>
+                                        <div class="column-filter">
+                                            
+                                            <select id="input-status">
+                                                <option value="Đang theo dõi">Đang theo dõi</option>
+                                                <option value="Ngừng theo dõi">Ngừng theo dõi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging">
+                    <div class="paging-content">
+                        <div class="icon-footer-paging" id="back-head-data"></div>
+                        <div class="icon-footer-paging" id="previous-page"></div>
+                        <div id="number-of-page">
+                            Trang
+                            <input id="text-number-page" type="text" value="1" />
+                        </div>
+
+                        <div class="icon-footer-paging" id="next-page"></div>
+                        <div class="icon-footer-paging" id="goto-end-page"></div>
+                        <div class="icon-footer-paging" id="btnSync"></div>
+                        <select id="btnLimit">
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//Dialog chi tiết thôgn tin khách hàng-->
+    <div class="dialog-modal">
+
+    </div>
+    <div class="dialog">
+        <div class="dialog-title">
+            <div class="title-text">
+                Thông tin nhân viên
+            </div>
+            <div class="title-close-button"></div>
+        </div>
+        <div class="dialog-body">
+            <label class="info-simple">Thông tin cơ bản</label>
+            <div class="lable lable-customer-code">
+                <label>Mã khách hàng<i> (*)</i></label>
+                <input id="txtCustomerCode" type="text" required name="name" value="" />
+            </div>
+            <div class="lable lable-customer-name">
+                <label>Tên khách hàng<i> (*)</i></label>
+                <input id="txtCustomerName" type="text" required name="name" value="" />
+            </div>
+            <div class="lable lable-group-customer">
+                <label>Nhóm khách hàng</label>
+                <select id="txtGroupCustomer">
+                    <option value="Khách hàng chuẩn">Khách hàng chuẩn</option>
+                    <option value="Khách hàng VIP">Khách hàng VIP</option>
+                </select>
+            </div>
+            <div class="lable lable-mobile">
+                <label>Điện thoại<i> (*)</i></label>
+                <input id="txtMobile" type="tel" required name="name" value="" />
+            </div>
+            <div class="lable lable-address">
+                <label>Địa chỉ</label>
+                <input id="txtCity" type="text" name="name" placeholder="Thành phố" value="" />
+                <input id="txtDistrict" type="text" name="name" placeholder="Quận/Huyện" value="" />
+                <input id="txtCommune" type="text" placeholder="Phường/xã" name="name" value="" />
+                <input id="txtStreet" type="text" name="name" placeholder="Số nhà, đường phố" value="" />
+            </div>
+            <div class="lable lable-email">
+                <label>Email</label>
+                <input id="txtEmail" type="email" name="name" value="" />
+            </div>
+            <div class="lable lable-birthday">
+                <label>Ngày sinh<i> (*)</i></label>
+                <input id="txtBirthday" type="date" required name="name" value="" dateformat="d M y" />
+            </div>
+
+            <div class="lable lable-textnote">
+                <label>Ghi chú</label>
+                <textarea id="txtTextnote"></textarea>
+            </div>
+
+            <label class="member_card">Thẻ thành viên</label>
+            <div class="lable lable-member-code">
+                <label>Mã thẻ thành viên</label>
+                <input id="txtMemberCode" type="text" name="name" value="" />
+            </div>
+            <div class="lable lable-rank">
+                <label>Hạng thẻ</label>
+                <input id="txtRank" type="text" name="name" value="" />
+            </div>
+            <div class="lable lable-cmnd">
+                <label>Số CMND/Hộ chiếu</label>
+                <input id="txtCMND" type="text" name="name" value="" />
+            </div>
+
+            <label class="info-company">Thông tin công ty</label>
+            <div class="lable lable-company">
+                <label>Tên công ty</label>
+                <input id="txtCompany" type="text" name="name" value="" />
+            </div>
+            <div class="lable lable-tax-code">
+                <label>Mã số thuế</label>
+                <input id="txtTaxcode" type="text" name="name" value="" />
+            </div>
+            <div class="lable lable-status">
+                <label>Đang theo dõi</label>
+                <input id="txtStatus" type="checkbox" name="name" value="" />
+            </div>
+        </div>
+        <div class="dialog-footer">
+
+            <button id="btnHelp"><i class="icon-footer-dialog"></i>Trợ giúp</button>
+            <button id="btnSave"><i class="icon-footer-dialog"></i>Lưu</button>
+            <button id="btnCancel"><i class="icon-footer-dialog"></i>Huỷ</button>
+        </div>
+    </div>
+    <script src="../js/library/jquery-3.5.0.min.js"></script>
+    <script src="/js/views/common.js"></script>
+    <script src="/js/views/Dialog.js"></script>
+    <script src="/js/views/customer.js"></script>
+</body>
+</html>

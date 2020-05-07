@@ -1,0 +1,312 @@
+﻿.dialog-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #808080;
+    opacity: 0.4;
+}
+
+
+
+.dialog {
+    display: none;
+    position: absolute;
+    top: calc(50% - 325px);
+    left: calc(50% - 297px);
+    right: 0;
+    bottom: 0;
+    width: 650px;
+    height: 594px;
+    background-color: #ffffff;
+    border: 3px solid #0973b9;
+    border-radius: 3px;
+}
+
+    .dialog .dialog-title {
+        height: 41px;
+        display: flex;
+        background-color: #0973b9;
+    }
+
+        .dialog .dialog-title .title-text {
+            height: 41px;
+            color: #ffffff;
+            font-size: 15px;
+            padding: 0 0 0 15px;
+            line-height: 35px;
+        }
+
+        .dialog .dialog-title .title-close-button {
+            width: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../../content/images/cancel.png');
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            right: 7px;
+            top: 7px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+    .dialog .dialog-body {
+        height: calc(100% - 120px);
+        padding: 10px;
+        background-color: #fff;
+        width: calc(100% - 20px);
+    }
+
+        .dialog .dialog-body input {
+            padding: 0 4px;
+            border: 1px solid #ccc;
+            height: 32px;
+            border-radius: 3px;
+            position: absolute;
+            right: 15px;
+            width: 170px;
+        }
+
+        .dialog .dialog-body select {
+            padding: 0 4px;
+            border: 1px solid #ccc;
+            height: 32px;
+            border-radius: 3px;
+            position: absolute;
+            right: 15px;
+            width: 180px;
+        }
+
+        .dialog .dialog-body input:focus {
+            border: 1px solid #0973b9;
+            outline: none;
+        }
+
+        .dialog .dialog-body .info-simple {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Arial;
+            color: #757575;
+            text-transform: uppercase;
+            padding: 4px 0;
+        }
+
+        .dialog .dialog-body .lable-customer-name {
+            top: 75px;
+            left: 328px;
+        }
+
+        .dialog .dialog-body .lable-customer-code {
+            top: 75px;
+        }
+
+        .dialog .dialog-body .lable {
+            margin: 0px 3px;
+            position: absolute;
+            right: auto;
+            height: 35px;
+            width: 319px;
+            line-height: 35px;
+        }
+            .dialog .dialog-body .lable i{
+                color: #ff0000;
+                font-style: normal;
+                font-size: 14px;
+            }
+
+            .dialog .dialog-body .lable-group-customer {
+                top: 115px;
+            }
+
+        .dialog .dialog-body .lable-mobile {
+            top: 115px;
+            left: 328px;
+        }
+
+        .dialog .dialog-body .lable-email {
+            top: 238px;
+        }
+
+        .dialog .dialog-body .lable-birthday {
+            top: 238px;
+            left: 328px;
+        }
+
+        .dialog .dialog-body .lable-address {
+            top: 155px;
+        }
+
+            .dialog .dialog-body .lable-address input {
+                position: absolute;
+                width: 156px;
+                height: 34px;
+            }
+
+            .dialog .dialog-body .lable-address #txtCity {
+                left: 124px;
+            }
+
+            .dialog .dialog-body .lable-address #txtDistrict {
+                left: 290px;
+            }
+
+            .dialog .dialog-body .lable-address #txtCommune {
+                left: 456px;
+            }
+
+            .dialog .dialog-body .lable-address #txtStreet {
+                width: 489px;
+                left: 124px;
+                top: 36px;
+            }
+
+        .dialog .dialog-body .lable-textnote {
+            width: 640px;
+            height: 60px;
+            top: 279px;
+        }
+
+            .dialog .dialog-body .lable-textnote textarea {
+                width: 489px;
+                height: 60px;
+                padding: 0 4px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                position: absolute;
+                right: 17px;
+                resize: none;
+            }
+
+        .dialog .dialog-body .member_card {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Arial;
+            color: #757575;
+            text-transform: uppercase;
+            padding: 4px 0;
+            position: absolute;
+            top: 351px;
+            left: 10px;
+        }
+
+        .dialog .dialog-body .lable-cmnd {
+            top: 416px;
+        }
+
+
+        .dialog .dialog-body .lable-member-code {
+            top: 376px;
+        }
+
+
+        .dialog .dialog-body .lable-rank {
+            top: 376px;
+            left: 328px;
+        }
+
+        .dialog .dialog-body .lable-status {
+            top: 416px;
+            left: 328px;
+        }
+
+            .dialog .dialog-body .lable-status input {
+                width: 20px;
+                height: 20px;
+                left: 120px;
+                top: 5px;
+                cursor: pointer;
+            }
+
+        .dialog .dialog-body .info-company {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: Arial;
+            color: #757575;
+            text-transform: uppercase;
+            padding: 4px 0;
+            position: absolute;
+            top: 460px;
+            left: 10px;
+        }
+
+        .dialog .dialog-body .lable-company {
+            top: 485px;
+        }
+
+        .dialog .dialog-body .lable-tax-code {
+            top: 485px;
+            left: 328px;
+        }
+
+
+
+
+    .dialog .dialog-footer {
+        height: 60px;
+        border-top: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+        .dialog .dialog-footer .icon-footer-dialog {
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+            margin-left: 5px;
+            background-image: url('../../content/images/common-icon.png');
+        }
+        .dialog .dialog-footer button {
+            height: 35px;
+            width: 65px;
+            margin-right: 10px;
+            color: #ffffff;
+            display: flex;
+            border: 1px solid #026b97;
+            border-radius: 3px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .dialog .dialog-footer #btnSave {
+            background-color: #0973b9;
+            
+            
+        }
+            .dialog .dialog-footer #btnSave i {
+                background-position: -330px -128px;
+            }
+        .dialog .dialog-footer #btnCancel {
+            background-color: #ffffff;
+            color: #0973b9 !important;
+        }
+            .dialog .dialog-footer #btnCancel:hover {
+                border-color: #026b97;
+            }
+            .dialog .dialog-footer #btnCancel i {
+                background-position: -1104px -128px;
+                border-color: #ffffff;
+            }
+        .dialog .dialog-footer #btnHelp {
+            width: 95px;
+            color: #0973b9 !important;
+            border-color: #ffffff;
+            background-color: #fff;
+            position: absolute;
+            left: 10px;
+        }
+
+            .dialog .dialog-footer #btnHelp:hover {
+                background-color: #d0d0d0;
+            }
+            .dialog .dialog-footer #btnHelp i {
+                background-image: url('../../content/images/help.png');
+                background-size: cover;
+                margin-right: 5px;
+            }
+            /*Check validate*/
+            .required-error {
+                border: 1px solid #ff0000 !important;
+            }
