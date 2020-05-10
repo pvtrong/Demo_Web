@@ -1007,7 +1007,7 @@ class CustomerJS {
             })
         }
         else {
-            alert("Bạn chưa chọn nhân viên nào!");
+            alert("Bạn chưa chọn khách hàng nào!");
         }
     }
 
@@ -1064,7 +1064,7 @@ class CustomerJS {
             })
         }
         else {
-            alert("Bạn chưa chọn nhân viên nào!");
+            alert("Bạn chưa chọn khách hàng nào!");
         }
     }
 
@@ -1133,7 +1133,7 @@ class CustomerJS {
             })
         }
         else {
-            alert("Bạn chưa chọn nhân viên nào!");
+            alert("Bạn chưa chọn khách hàng nào!");
         }
     }
 
