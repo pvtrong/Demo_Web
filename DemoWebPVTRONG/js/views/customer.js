@@ -964,7 +964,7 @@ class CustomerJS {
         // Lấy dữ liệu của khách hàng tương ứng đã chọn: 
         //1. Xác định khách hàng được chọn:
         var customerID = self.getID();
-        //2. Lấy thông tin Mã kháhc hàng:
+        //2. Lấy thông tin Mã khách hàng:
         if (customerID) {
             debugger;
             // Hiển thị form chi tiết
@@ -1114,7 +1114,7 @@ class CustomerJS {
         debugger;
         var self = this;
         // Lấy dữ liệu của khách hàng tương ứng đã chọn: 
-        //1. Xác định mã khách hàng được chọn:d
+        //1. Xác định mã khách hàng được chọn:
         var customerID = self.getID();
         if (customerID) {
             $.ajax({
