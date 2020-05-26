@@ -1237,7 +1237,7 @@ class CustomerJS {
 
     // 2 Hàm hiện và ẩn form dialog
     showDialogDetail() {
-        // Clean tất cả các giá trị cũ input trong form: 
+        // Clear tất cả các giá trị cũ input trong form: 
         $(".dialog input").val(null);
         $('.dialog-modal').show();
         $('.dialog').show();
